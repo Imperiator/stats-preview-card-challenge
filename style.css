@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+    font-size: 15px;
+    --prim-dark-blue: hsl(233, 47%, 7%);
+    --prim-sat-blue: hsl(244, 38%, 16%);
+    --prim-violet: hsl(277, 64%, 61%);
+  
+    --neu-white: hsl(0, 0%, 100%);
+    --neu-trans-white: hsla(0, 0%, 100%, 0.75);
+    --neu-more-trans-white: hsla(0, 0%, 100%, 0.6);
+
+    --bg-violet: hsl(277deg, 100%, 50%, 0.42);
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--prim-dark-blue);
+    color: var(--neu-white);
+}
+
+.container {
+    min-width: 600px;
+    display: flex;
+    margin: 1em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 5.85em 7em 5.85em 5.85em;
+    width: 570px;
+    min-width: 200px;
+    background: var(--prim-sat-blue);
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+h1 {
+    margin-bottom: 0.8em;
+    font-size: 2.25rem;
+}
+
+span {
+    color: var(--prim-violet);
+}
+
+.description {
+    color: var(--neu-trans-white);
+    line-height: 1.4rem;
+    margin-bottom: 5em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+li:hover {
+    color: var(--prim-violet);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+li h2{
+    
+    margin-bottom: 0.45em;
+}
+
+li p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.70em;
+    color: var(--neu-trans-white);
+    text-transform: uppercase;
+}
+
+.img {
+    min-height: 10em;
+    width: 540px;
+    min-width: 200px;
+    background: url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+
+.overlay {
+    background: var(--bg-violet);
+    min-height: 100%;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+
+
+@media screen and (max-width: 1024px){
+    :root {
+        font-size: 12px;
+      }
+    .container {
+    padding: 3em 4.5em 3em 3em;
+
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        margin: 10px;
+        min-width: 200px;
+    }
+
+    .text {
+        padding: 3em;
+        width: 300px;
+        border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
+}
+
+    .img {
+        height: 220px;
+        width: 300px;
+        background: url("./images/image-header-mobile.jpg");
+        background-size: contain;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+}
+
+.overlay {
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.attribution {
+    position: relative !important;
+}
+    
+}
+
+
+
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
